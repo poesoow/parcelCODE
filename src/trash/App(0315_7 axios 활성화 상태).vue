@@ -10,6 +10,7 @@
     </div>
   </div>
 
+
   <h3 class="text-center text-5xl  mt-10">택배조회</h3>
   <div class="w-4/5 md:w-3/5 xl:w-4/12 mx-auto mt-10 flex bg-white rounded items-center flex-wrap">
     <div class="border-b basis-full py-2 px-5 flex justify-center items-center text-sm">
@@ -57,8 +58,10 @@
     </div>
   </div>
 
+  <!-- 코드 수정 필요 errormsg가 없으면 이 영역이 아예 안나오게 하기 지금 코드로는 공간을 차지하고 아래에 생김 -->
   <p v-if="errorMsg !== ''" class="text-center text-2xl py-20 text-red-500 font-bold">{{ errorMsg }}</p>
 
+  <!-- error메세지가 비워있다면도 넣어주어서 출력 -->
   <div v-if="trackingState === true && errorMsg === ''" class="w-full relative">
     <div class="text-xs absolute top-0 right-[10%] md:right-[20%] xl:right-[33%] tracking-[-0.075em] md:tracking-normal">본 정보는 스마트택배에서 제공받는 정보로, 실제 배송상황과 다를 수 있습니다.</div>
     <div class="flex justify-center py-10 px-5 flex-wrap items-center">
@@ -99,8 +102,8 @@
             </div>
             <div class="basis-[30%] text-center">{{ e.timeString }}</div>
             <div class="basis-[30%] text-center">
-              <p><a :href="`tel:${e.telno}`" @click="document.location.href = `tel:${e.telno}`">{{ e.telno }}</a></p>
-              <p><a :href="`tel:${e.telno2}`" @click="document.location.href = `tel:${e.telno2}`">{{ e.telno2 }}</a></p>
+              <p>{{ e.telno }}</p>
+              <p>{{ e.telno2 }}</p>
             </div>
           </div>
         </div>
@@ -115,6 +118,10 @@
 </template>
 
 <script>
+// // 로컬로 작업한 Tracking 주석 처리
+// import carrierList from './assets/company.json';
+// import Tracking from './assets/tracking.json';
+// 로컬로 돌리기 위해 주석 처리
 import axios from 'axios';
 
 export default {
@@ -126,10 +133,17 @@ export default {
     return {
       t_key: "ki6NR3qhneOeUH5bQhIT7w",
       t_code: "택배사를 선택해주세요",
+      // 로컬 확인용
+      // t_invoice: "363804378896",
       t_invoice: "",
+      // 로컬로 저장한 json 파일을 carrierList 을 저장
+      // Carriers: carrierList,
+      // 데이터 가져올 것 배열로 변수 설정
       Carriers: [],
       // 국내 국외 선택
       isBtn: 1,
+      // 로컬로 저장한 tracking 상태
+      // Trackings: Tracking,
       // 데이터 가져올 것 배열로 변수 설정
       Trackings: [],
       // 배송상태 출력을 위한 값(API에 없기 때문에 직접 네이밍해야함)
@@ -140,6 +154,10 @@ export default {
       // 테마생성
       theme: 'default',
       themecolor: {
+        // "default" :{
+        //   "back" : "odd:bg-slate-300 even:bg-slate-100", "hover": "hover:bg-slate-500", "active": "bg-slate-400", "text": "text-black"
+        // },
+        // default 값 너무 침침해서 blue를 default값으로 변겅
         "default": {
           "back": "odd:bg-blue-300 even:bg-blue-100", "hover": "hover:bg-blue-500", "active": "bg-blue-400", "text": "text-white", "border": "border-blue-400"
         },
@@ -153,17 +171,18 @@ export default {
     }
   },
   created() {
+    // 로컬로 돌리기 위해 주석 처리
     axios.get("https://info.sweettracker.co.kr/api/v1/companylist?t_key=ki6NR3qhneOeUH5bQhIT7w")
     .then((res)=>{
       this.Carriers = res.data.Company
-      // console.log("create", this.Carriers)
+      console.log("create", this.Carriers)
     })
     .catch((error)=>{
       console.log(error)
     })
   },
   mounted() {
-    // console.log("mount",  this.Trackings)
+    console.log("mount",  this.Trackings)
   },
   computed: {
     // 국내 국외 택배사 변경을 위해 for 문에서 돌기 위해
@@ -211,7 +230,7 @@ export default {
           t_key: this.t_key
         }
       }).then((res)=>{
-        // console.log("Postlist", res)
+        console.log("Postlist", res)
         if(res.data.code === '104'){
           this.errorMsg = res.data.msg
         }else{

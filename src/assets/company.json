@@ -1,0 +1,643 @@
+[
+  {
+    "Code": "04",
+    "International": "false",
+    "Name": "CJ대한통운"
+  },
+  {
+    "Code": "05",
+    "International": "false",
+    "Name": "한진택배"
+  },
+  {
+    "Code": "08",
+    "International": "false",
+    "Name": "롯데택배"
+  },
+  {
+    "Code": "01",
+    "International": "false",
+    "Name": "우체국택배"
+  },
+  {
+    "Code": "06",
+    "International": "false",
+    "Name": "로젠택배"
+  },
+  {
+    "Code": "11",
+    "International": "false",
+    "Name": "일양로지스"
+  },
+  {
+    "Code": "12",
+    "International": "true",
+    "Name": "EMS"
+  },
+  {
+    "Code": "13",
+    "International": "true",
+    "Name": "DHL"
+  },
+  {
+    "Code": "20",
+    "International": "false",
+    "Name": "한덱스"
+  },
+  {
+    "Code": "21",
+    "International": "true",
+    "Name": "FedEx"
+  },
+  {
+    "Code": "14",
+    "International": "true",
+    "Name": "UPS"
+  },
+  {
+    "Code": "26",
+    "International": "true",
+    "Name": "USPS"
+  },
+  {
+    "Code": "22",
+    "International": "false",
+    "Name": "대신택배"
+  },
+  {
+    "Code": "23",
+    "International": "false",
+    "Name": "경동택배"
+  },
+  {
+    "Code": "32",
+    "International": "false",
+    "Name": "합동택배"
+  },
+  {
+    "Code": "46",
+    "International": "false",
+    "Name": "CU 편의점택배"
+  },
+  {
+    "Code": "24",
+    "International": "false",
+    "Name": "GS Postbox 택배"
+  },
+  {
+    "Code": "25",
+    "International": "true",
+    "Name": "TNT Express"
+  },
+  {
+    "Code": "16",
+    "International": "false",
+    "Name": "한의사랑택배"
+  },
+  {
+    "Code": "17",
+    "International": "false",
+    "Name": "천일택배"
+  },
+  {
+    "Code": "18",
+    "International": "false",
+    "Name": "건영택배"
+  },
+  {
+    "Code": "28",
+    "International": "true",
+    "Name": "GSMNtoN"
+  },
+  {
+    "Code": "30",
+    "International": "true",
+    "Name": "KGL네트웍스"
+  },
+  {
+    "Code": "33",
+    "International": "true",
+    "Name": "DHL Global Mail"
+  },
+  {
+    "Code": "34",
+    "International": "true",
+    "Name": "i-Parcel"
+  },
+  {
+    "Code": "37",
+    "International": "true",
+    "Name": "LX판토스"
+  },
+  {
+    "Code": "38",
+    "International": "true",
+    "Name": "ECMS Express"
+  },
+  {
+    "Code": "40",
+    "International": "false",
+    "Name": "굿투럭"
+  },
+  {
+    "Code": "41",
+    "International": "true",
+    "Name": "GSI Express"
+  },
+  {
+    "Code": "42",
+    "International": "true",
+    "Name": "CJ대한통운 국제특송"
+  },
+  {
+    "Code": "43",
+    "International": "false",
+    "Name": "애니트랙"
+  },
+  {
+    "Code": "44",
+    "International": "false",
+    "Name": "SLX택배"
+  },
+  {
+    "Code": "45",
+    "International": "false",
+    "Name": "우리택배(구호남택배)"
+  },
+  {
+    "Code": "47",
+    "International": "false",
+    "Name": "우리한방택배"
+  },
+  {
+    "Code": "48",
+    "International": "true",
+    "Name": "ACI Express"
+  },
+  {
+    "Code": "49",
+    "International": "true",
+    "Name": "A.C.E EXPRESS INC"
+  },
+  {
+    "Code": "50",
+    "International": "true",
+    "Name": "GPS Logix"
+  },
+  {
+    "Code": "51",
+    "International": "true",
+    "Name": "성원글로벌카고"
+  },
+  {
+    "Code": "53",
+    "International": "false",
+    "Name": "농협택배"
+  },
+  {
+    "Code": "54",
+    "International": "false",
+    "Name": "홈픽택배"
+  },
+  {
+    "Code": "55",
+    "International": "true",
+    "Name": "EuroParcel"
+  },
+  {
+    "Code": "57",
+    "International": "true",
+    "Name": "Cway Express"
+  },
+  {
+    "Code": "60",
+    "International": "true",
+    "Name": "YJS글로벌(영국)"
+  },
+  {
+    "Code": "63",
+    "International": "true",
+    "Name": "은하쉬핑"
+  },
+  {
+    "Code": "65",
+    "International": "true",
+    "Name": "YJS글로벌(월드)"
+  },
+  {
+    "Code": "66",
+    "International": "true",
+    "Name": "Giant Network Group"
+  },
+  {
+    "Code": "67",
+    "International": "true",
+    "Name": "디디로지스"
+  },
+  {
+    "Code": "69",
+    "International": "true",
+    "Name": "대림통운"
+  },
+  {
+    "Code": "70",
+    "International": "true",
+    "Name": "LOTOS CORPORATION"
+  },
+  {
+    "Code": "71",
+    "International": "false",
+    "Name": "IK물류"
+  },
+  {
+    "Code": "72",
+    "International": "false",
+    "Name": "성훈물류"
+  },
+  {
+    "Code": "73",
+    "International": "true",
+    "Name": "CR로지텍"
+  },
+  {
+    "Code": "74",
+    "International": "false",
+    "Name": "용마로지스"
+  },
+  {
+    "Code": "75",
+    "International": "false",
+    "Name": "원더스퀵"
+  },
+  {
+    "Code": "77",
+    "International": "true",
+    "Name": "LineExpress"
+  },
+  {
+    "Code": "79",
+    "International": "false",
+    "Name": "로지스밸리택배"
+  },
+  {
+    "Code": "81",
+    "International": "true",
+    "Name": "제니엘시스템"
+  },
+  {
+    "Code": "82",
+    "International": "false",
+    "Name": "컬리넥스트마일"
+  },
+  {
+    "Code": "84",
+    "International": "true",
+    "Name": "스마트로지스"
+  },
+  {
+    "Code": "85",
+    "International": "false",
+    "Name": "풀앳홈"
+  },
+  {
+    "Code": "86",
+    "International": "false",
+    "Name": "삼성전자물류"
+  },
+  {
+    "Code": "87",
+    "International": "true",
+    "Name": "이투마스(ETOMARS)"
+  },
+  {
+    "Code": "88",
+    "International": "false",
+    "Name": "큐런택배"
+  },
+  {
+    "Code": "89",
+    "International": "false",
+    "Name": "두발히어로"
+  },
+  {
+    "Code": "90",
+    "International": "false",
+    "Name": "위니아딤채"
+  },
+  {
+    "Code": "91",
+    "International": "true",
+    "Name": "하이브시티"
+  },
+  {
+    "Code": "92",
+    "International": "false",
+    "Name": "지니고 당일배송"
+  },
+  {
+    "Code": "93",
+    "International": "true",
+    "Name": "팬스타국제특송(PIEX)"
+  },
+  {
+    "Code": "94",
+    "International": "false",
+    "Name": "오늘의픽업"
+  },
+  {
+    "Code": "95",
+    "International": "true",
+    "Name": "큐익스프레스"
+  },
+  {
+    "Code": "96",
+    "International": "false",
+    "Name": "로지스밸리"
+  },
+  {
+    "Code": "97",
+    "International": "true",
+    "Name": "에이씨티앤코아물류"
+  },
+  {
+    "Code": "99",
+    "International": "true",
+    "Name": "롯데택배 해외특송"
+  },
+  {
+    "Code": "100",
+    "International": "true",
+    "Name": "나은물류"
+  },
+  {
+    "Code": "101",
+    "International": "false",
+    "Name": "한샘서비스원 택배"
+  },
+  {
+    "Code": "102",
+    "International": "true",
+    "Name": "배송하기좋은날(SHIPNERGY)"
+  },
+  {
+    "Code": "103",
+    "International": "false",
+    "Name": "NDEX KOREA"
+  },
+  {
+    "Code": "104",
+    "International": "false",
+    "Name": "도도플렉스(dodoflex)"
+  },
+  {
+    "Code": "105",
+    "International": "true",
+    "Name": "BRIDGE LOGIS"
+  },
+  {
+    "Code": "106",
+    "International": "true",
+    "Name": "허브넷로지스틱스"
+  },
+  {
+    "Code": "107",
+    "International": "false",
+    "Name": "LG전자(판토스)"
+  },
+  {
+    "Code": "108",
+    "International": "true",
+    "Name": "MEXGLOBAL"
+  },
+  {
+    "Code": "109",
+    "International": "true",
+    "Name": "파테크해운항공"
+  },
+  {
+    "Code": "110",
+    "International": "false",
+    "Name": "부릉"
+  },
+  {
+    "Code": "111",
+    "International": "true",
+    "Name": "SBGLS"
+  },
+  {
+    "Code": "112",
+    "International": "false",
+    "Name": "1004홈"
+  },
+  {
+    "Code": "113",
+    "International": "false",
+    "Name": "썬더히어로"
+  },
+  {
+    "Code": "114",
+    "International": "true",
+    "Name": "캐나다쉬핑"
+  },
+  {
+    "Code": "116",
+    "International": "false",
+    "Name": "(주)팀프레시"
+  },
+  {
+    "Code": "117",
+    "International": "true",
+    "Name": "YUNDA EXPRESS"
+  },
+  {
+    "Code": "118",
+    "International": "false",
+    "Name": "롯데칠성"
+  },
+  {
+    "Code": "119",
+    "International": "false",
+    "Name": "핑퐁"
+  },
+  {
+    "Code": "120",
+    "International": "false",
+    "Name": "발렉스 특수물류"
+  },
+  {
+    "Code": "121",
+    "International": "true",
+    "Name": "바바바(bababa)"
+  },
+  {
+    "Code": "122",
+    "International": "true",
+    "Name": "BAIMA EXPRESS"
+  },
+  {
+    "Code": "123",
+    "International": "false",
+    "Name": "엔티엘피스"
+  },
+  {
+    "Code": "124",
+    "International": "true",
+    "Name": "LTL"
+  },
+  {
+    "Code": "125",
+    "International": "false",
+    "Name": "GTS로지스"
+  },
+  {
+    "Code": "126",
+    "International": "true",
+    "Name": "㈜올타코리아"
+  },
+  {
+    "Code": "127",
+    "International": "false",
+    "Name": "로지스팟"
+  },
+  {
+    "Code": "128",
+    "International": "true",
+    "Name": "판월드로지스틱㈜"
+  },
+  {
+    "Code": "129",
+    "International": "false",
+    "Name": "홈픽 오늘도착"
+  },
+  {
+    "Code": "130",
+    "International": "false",
+    "Name": "UFO로지스"
+  },
+  {
+    "Code": "131",
+    "International": "false",
+    "Name": "딜리래빗"
+  },
+  {
+    "Code": "132",
+    "International": "false",
+    "Name": "지오피"
+  },
+  {
+    "Code": "134",
+    "International": "false",
+    "Name": "에이치케이홀딩스"
+  },
+  {
+    "Code": "135",
+    "International": "false",
+    "Name": "HTNS"
+  },
+  {
+    "Code": "136",
+    "International": "false",
+    "Name": "케이제이티"
+  },
+  {
+    "Code": "137",
+    "International": "false",
+    "Name": "더바오"
+  },
+  {
+    "Code": "138",
+    "International": "false",
+    "Name": "라스트마일"
+  },
+  {
+    "Code": "139",
+    "International": "false",
+    "Name": "오늘회 러쉬"
+  },
+  {
+    "Code": "140",
+    "International": "true",
+    "Name": "직구문"
+  },
+  {
+    "Code": "141",
+    "International": "true",
+    "Name": "인터로지스"
+  },
+  {
+    "Code": "142",
+    "International": "false",
+    "Name": "탱고앤고"
+  },
+  {
+    "Code": "143",
+    "International": "false",
+    "Name": "투데이"
+  },
+  {
+    "Code": "144",
+    "International": "true",
+    "Name": "큐브플로우(CUBEFLOW)"
+  },
+  {
+    "Code": "145",
+    "International": "false",
+    "Name": "현대글로비스"
+  },
+  {
+    "Code": "146",
+    "International": "true",
+    "Name": "국제로지스틱(KSE)"
+  },
+  {
+    "Code": "147",
+    "International": "true",
+    "Name": "에스더쉬핑"
+  },
+  {
+    "Code": "148",
+    "International": "false",
+    "Name": "ARGO"
+  },
+  {
+    "Code": "149",
+    "International": "true",
+    "Name": "골드스넵스"
+  },
+  {
+    "Code": "151",
+    "International": "false",
+    "Name": "자이언트"
+  },
+  {
+    "Code": "152",
+    "International": "true",
+    "Name": "(주)엠티인터내셔널"
+  },
+  {
+    "Code": "153",
+    "International": "true",
+    "Name": "(주)이지로지스틱"
+  },
+  {
+    "Code": "154",
+    "International": "true",
+    "Name": "KT EXPRESS(케이티익스프레스)"
+  },
+  {
+    "Code": "155",
+    "International": "true",
+    "Name": "HY"
+  },
+  {
+    "Code": "156",
+    "International": "false",
+    "Name": "유피로지스"
+  },
+  {
+    "Code": "157",
+    "International": "false",
+    "Name": "우진인터로지스"
+  }
+   
+]
