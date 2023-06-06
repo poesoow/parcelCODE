@@ -16,23 +16,23 @@
       <span class="basis-[31%] text-center mr-5">국내 / 국외 선택</span>
       <div class="flex justify-center w-3/5 md:w-2/5 xl:w-6/12">
         <!-- 1번 버튼이고 테마가 있다면 테마의 active를 주세요 -->
-        <button 
-        @click="isBtn = 1; t_code='04'" 
+        <button
+        @click="isBtn = 1; t_code='04'"
         :class="[
-        isBtn === 1 && themecolor[theme] && themecolor[theme].active, 
-        themecolor[theme] && themecolor[theme].hover, 
-        isBtn === 1 ? ' text-white' : 'text-black']" 
+        isBtn === 1 && themecolor[theme] && themecolor[theme].active,
+        themecolor[theme] && themecolor[theme].hover,
+        isBtn === 1 ? ' text-white' : 'text-black']"
         class="border-[purple] text-sm border p-1 px-5 rounded hover:text-white mr-4">국내</button>
-        <button 
-        @click="isBtn = 2; t_code='12'" 
-        :class="[isBtn === 2 && themecolor[theme] && themecolor[theme].active, themecolor[theme] && themecolor[theme].hover, isBtn === 2 ? ' text-white' : 'text-black']" 
+        <button
+        @click="isBtn = 2; t_code='12'"
+        :class="[isBtn === 2 && themecolor[theme] && themecolor[theme].active, themecolor[theme] && themecolor[theme].hover, isBtn === 2 ? ' text-white' : 'text-black']"
         class="border-[purple] text-sm border p-1 px-5 rounded hover:text-white ">해외</button>
       </div>
     </div>
     <div class="border-b basis-full py-2 px-5 flex justify-center items-center">
       <div class="basis-[31%] text-center mr-5 text-sm">택배사 선택</div>
       <!--v-model을 주는 이유 바인딩을 하기위해(바인딩이 되는것은 화면상단에 {{ t_code }} 출력시 잘 보임 )(추가로 안해주면 값이 역순으로 나옴(value 값 변화로 인해서 역순으로 나오는데 그게 v-model 을 통해서 바인딩되어서 역순을 막아주는거 같음)) -->
-      
+
       <select v-model="t_code" class="border-[purple] text-center border w-3/5 md:w-2/5 xl:w-6/12">
         <option value="택배사를 선택해주세요" disabled hidden>택배사를 선택해주세요</option>
         <option v-for="e in Company" :key="e" :value="e.Code" >{{ e.Name }}</option>
@@ -42,15 +42,15 @@
       <div class="basis-[31%] text-center mr-5 text-sm">운송장번호</div>
       <div class="w-3/5 md:w-2/5 xl:w-6/12 text-center border-b">
         <!-- // id 추가 -->
-        <input type="text" placeholder="운송장 번호 - 없이 입력" 
+        <input type="text" placeholder="운송장 번호 - 없이 입력"
         class="border w-[100%] px-5 py-1 bg-slate-300 outline-indigo-300 placeholder"
         v-model="t_invoice" @input="bindNumber" id="t_invoice">
       </div>
     </div>
     <div class="w-full text-center">
-      <button 
+      <button
       :class="[
-        themecolor[theme] && themecolor[theme].hover, 
+        themecolor[theme] && themecolor[theme].hover,
         themecolor[theme] && themecolor[theme].active]"
       class="w-full text-white py-3"
       @click="[trackingStateChange(), PostList()]">조회하기</button>
@@ -66,7 +66,7 @@
       <h3 class="text-left text-2xl w-[45%] font-bold mb-5">{{ Trackings.invoiceNo }}</h3>
       <span class="text-right  text-xl basis-[45%] font-bold mr-5">택배사</span>
       <!-- [0]을 쓰는 이유 [] 배열표시를 지우기 위해 TrackingCode computed에서 새로운 배열로 만들고 map 문을 통해 원하는 값하나만을 넣은 배열로 존재 -->
-      <h3 class="text-left  text-xl w-[45%] font-bold">{{ TrackingCode[0] }}</h3> 
+      <h3 class="text-left  text-xl w-[45%] font-bold">{{ TrackingCode[0] }}</h3>
     </div>
     <div v-if=" errorMsg === '' && Trackings.level !== 1">
       <div class="my-5 flex justify-around">
@@ -83,18 +83,18 @@
           </div>
           <div class="basis-[33%] text-center">시간</div>
           <div class="basis-[33%] text-center ml-[1%]">
-            <div>연락처</div> 
-            <div>기사님연락처</div> 
+            <div>연락처</div>
+            <div>기사님연락처</div>
           </div>
         </div>
         <div class="[&>:first-child]:underline [&>:first-child]:font-bold">
-          <div 
+          <div
           v-for="(e, index) in Trackings.trackingDetails.slice().reverse()" :key="index"
           :class="[themecolor[theme] && themecolor[theme].back]"
           class="py-5 flex justify-around items-center">
           <!-- odd:bg-slate-300 even:bg-slate-100 -->
             <div class="basis-[30%] text-center">
-              <p>{{ e.where }}</p> 
+              <p>{{ e.where }}</p>
               <p>{{ e.kind }}</p>
             </div>
             <div class="basis-[30%] text-center">{{ e.timeString }}</div>
@@ -111,7 +111,7 @@
     </div>
   </div>
 
-  
+
 </template>
 
 <script>
@@ -120,7 +120,7 @@ import axios from 'axios';
 export default {
   name: 'App',
   components: {
-    
+
   },
   data() {
     return {
@@ -153,7 +153,7 @@ export default {
     }
   },
   created() {
-    axios.get("https://info.sweettracker.co.kr/api/v1/companylist?t_key=ki6NR3qhneOeUH5bQhIT7w")
+    axios.get(`https://info.sweettracker.co.kr/api/v1/companylist?t_key=${this.t_key}`)
     .then((res)=>{
       this.Carriers = res.data.Company
       // console.log("create", this.Carriers)
@@ -177,7 +177,7 @@ export default {
         }
       })
     },
-    // 필터를 걸고 원하는 값만 나오게 하기 위해서 
+    // 필터를 걸고 원하는 값만 나오게 하기 위해서
     TrackingCode() {
       return this.Carriers.filter((e)=>{
         return e.Code === this.t_code
@@ -188,7 +188,7 @@ export default {
     },
   },
   watch:{
- 
+
   },
   // v-model 를 사용할거면 watch를 사용해야함 @input 이라서 method 사용
   methods:{
@@ -218,7 +218,7 @@ export default {
           this.Trackings = res.data
           // 초기화 시키려고 함
           this.errorMsg = ''
-          // 없어도 아래 나오네??? 
+          // 없어도 아래 나오네???
           // this.trackingState = true
         }
       }).catch((error)=>{
